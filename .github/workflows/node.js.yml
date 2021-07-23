@@ -23,6 +23,12 @@ jobs:
         node-version: ${{ matrix.node_version }}
     - name: Install Dependencies
       run: npm ci
+    - name: Install Ionic CLI
+      run: npm install -g @ionic/cli native-run cordova-res
+    - name: Install Capacitor
+      run: npm install @capacitor/camera @capacitor/storage @capacitor/filesystem
+    - name: Install PWA Components
+      run: npm install @ionic/pwa-elements
     - name: Lint
       run: npm run lint -- --fix
     - name: Ionic Build
