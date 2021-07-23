@@ -35,7 +35,7 @@ jobs:
       run: npm run ionicBuild
     - uses: actions/upload-artifact@v2
       with:
-        name: my-artifact
+        name: Ionic Output
         path: www/ # or path/to/artifact
   #  - name: Add IOS Capacitor
   #    run: npm run addIOS
