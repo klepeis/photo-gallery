@@ -9,7 +9,10 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "ionicBuild": "ionic build",
+    "addIOS": "ionic cap add ios",
+    "addAndroid": "ionic cap add android"
   },
   "private": true,
   "dependencies": {
