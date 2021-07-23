@@ -33,9 +33,13 @@ jobs:
       run: npm run lint -- --fix
     - name: Ionic Build
       run: npm run ionicBuild
-    - name: Add IOS Capacitor
-      run: npm run addIOS
-    - name: Add Android Capacitor
-      run: npm run addAndroid
+    - uses: actions/upload-artifact@v2
+      with:
+        name: my-artifact
+        path: www/ # or path/to/artifact
+  #  - name: Add IOS Capacitor
+  #    run: npm run addIOS
+  #  - name: Add Android Capacitor
+  #    run: npm run addAndroid
   #  - name: Test
   #    run: npm test
