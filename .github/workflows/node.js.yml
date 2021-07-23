@@ -37,5 +37,5 @@ jobs:
       run: npm run addIOS
     - name: Add Android Capacitor
       run: npm run addAndroid
-    - name: Test
-      run: npm test
+  #  - name: Test
+  #    run: npm test
